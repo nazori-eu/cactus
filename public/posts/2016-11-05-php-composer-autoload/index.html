@@ -6,16 +6,19 @@
   <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   
+  <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+  <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> composer中的autoload | My New Hugo Site</title>
+  <title> composer中的autoload | Cactus theme example</title>
   <link rel = 'canonical' href = 'http://localhost:1313/posts/2016-11-05-php-composer-autoload/'>
-  
+  <meta name="description" content="Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta property="og:url" content="http://localhost:1313/posts/2016-11-05-php-composer-autoload/">
-  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:site_name" content="Cactus theme example">
   <meta property="og:title" content="composer中的autoload">
   <meta property="og:description" content="composer的autoload可以轻松的实现php的自动加载。在composer.json中添加autoload字段即可。当前支持 PSR-0 PSR-4 classmap解析和files包含。官方推荐PSR-4标准（添加类时不需要重新生成加载器）。
 PSR-4 Under the psr-4 key you define a mapping from namespaces to paths, relative to the package root. When autoloading a class like Foo\\Bar\\Baz a namespace prefix Foo\\ pointing to a directory src/ means that the autoloader will look for a file named src/Bar/Baz.php and include it if present. Note that as opposed to the older PSR-0 style, the prefix (Foo\\) is not present in the file path.">
@@ -37,7 +40,7 @@ PSR-4 Under the psr-4 key you define a mapping from namespaces to paths, relativ
     
   
   
-  <link rel="stylesheet" href="http://localhost:1313/css/styles.c05d68261bf086a9d7713c4f8a6215a3601608e267a816a7ee58f139b3d1aae51222aae2081c8e0c6bd35e1334773b7a16283022f31f92afd93bb37e5e822e66.css" integrity="sha512-wF1oJhvwhqnXcTxPimIVo2AWCOJnqBan7ljxObPRquUSIqriCByODGvTXhM0dzt6FigwIvMfkq/ZO7N&#43;XoIuZg=="> 
+  <link rel="stylesheet" href="http://localhost:1313/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q=="> 
 
   
   
@@ -52,6 +55,8 @@ PSR-4 Under the psr-4 key you define a mapping from namespaces to paths, relativ
 <link rel="icon" type="image/png" href="http://localhost:1313/images/favicon.ico" />
 
   
+  
+  
 </head>
 
 <body class="max-width mx-auto px3 ltr">
@@ -64,6 +69,14 @@ PSR-4 Under the psr-4 key you define a mapping from namespaces to paths, relativ
   <span id="menu">
     <span id="nav">
       <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
         
       </ul>
     </span>
@@ -189,6 +202,12 @@ PSR-4 Under the psr-4 key you define a mapping from namespaces to paths, relativ
         </div>
         
         
+        <div class="article-read-time">
+          <i class="far fa-clock"></i>
+          
+          2 minute read
+        </div>
+        
         
         
         <div class="article-tag">
@@ -255,6 +274,23 @@ PSR-4 Under the psr-4 key you define a mapping from namespaces to paths, relativ
 
 
 
+  <div class="blog-post-comments">
+    
+      <div id="cactus-comments-thread">
+  <script>
+  initComments({
+    node: document.getElementById("cactus-comments-thread"),
+    defaultHomeserverUrl: 'https:\/\/matrix.cactus.chat:8448',
+    serverName: 'cactus.chat',
+    siteName: "your_cactus_comments_sitename",
+    commentSectionId: "\/posts\/2016-11-05-php-composer-autoload\/"
+  })
+</script>
+</div>
+
+    
+  </div>
+
 
 
   <div id="footer-post-container">
@@ -262,6 +298,14 @@ PSR-4 Under the psr-4 key you define a mapping from namespaces to paths, relativ
 
     <div id="nav-footer" style="display: none">
       <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/posts">Writings</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/about">About</a></li>
         
       </ul>
     </div>
@@ -358,11 +402,19 @@ PSR-4 Under the psr-4 key you define a mapping from namespaces to paths, relativ
 
   <footer id="footer">
   <div class="footer-left">
-    Copyright  &copy; 2024  My New Hugo Site 
+    Copyright  &copy; 2024  You 
   </div>
   <div class="footer-right">
     <nav>
       <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
         
       </ul>
     </nav>
