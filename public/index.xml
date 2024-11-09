@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cactus theme example</title>
+    <title>nazori Archive</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Cactus theme example</description>
+    <description>Recent content on nazori Archive</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>You</copyright>
@@ -35,7 +35,7 @@
       <link>http://localhost:1313/about/</link>
       <pubDate>Wed, 24 Aug 2016 17:51:42 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;Github: &lt;a href=&#34;https://github.com/monkeyWzr&#34;&gt;monkeyWzr&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Github: &lt;a href=&#34;https://github.com/nazori-eu&#34;&gt;nazori&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;files/2024-CV.pdf&#34;&gt;Download the PDF&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
