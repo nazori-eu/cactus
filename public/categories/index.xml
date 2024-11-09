@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on nazori Archive</title>
-    <link>http://localhost:1313//archive.nazori.eu/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on nazori Archive</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>You</copyright>
     <lastBuildDate>Sun, 27 Oct 2024 09:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313//archive.nazori.eu/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Recipe</title>
-      <link>http://localhost:1313//archive.nazori.eu/categories/recipe/</link>
+      <link>http://localhost:1313/categories/recipe/</link>
       <pubDate>Sun, 27 Oct 2024 09:00:00 +0000</pubDate>
-      <guid>http://localhost:1313//archive.nazori.eu/categories/recipe/</guid>
+      <guid>http://localhost:1313/categories/recipe/</guid>
       <description></description>
     </item>
     <item>
       <title>Life</title>
-      <link>http://localhost:1313//archive.nazori.eu/categories/life/</link>
+      <link>http://localhost:1313/categories/life/</link>
       <pubDate>Tue, 22 Oct 2024 16:56:54 +0000</pubDate>
-      <guid>http://localhost:1313//archive.nazori.eu/categories/life/</guid>
+      <guid>http://localhost:1313/categories/life/</guid>
       <description></description>
     </item>
   </channel>

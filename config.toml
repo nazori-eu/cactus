@@ -1,4 +1,4 @@
-baseURL = "https://http://archive.nazori.eu"
+baseURL = "https://archive.nazori.eu"
 languageCode = "en-us"
 title = "nazori Archive"
 theme = "cactus"
