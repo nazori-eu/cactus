@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raspberry on nazori Archive</title>
+    <link>http://localhost:1313/tags/raspberry/</link>
+    <description>Recent content in Raspberry on nazori Archive</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>You</copyright>
+    <lastBuildDate>Sat, 05 Nov 2016 02:42:06 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/raspberry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Pimox8 Raspberry</title>
+      <link>http://localhost:1313/posts/2016-11-05-php-composer-autoload/</link>
+      <pubDate>Sat, 05 Nov 2016 02:42:06 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2016-11-05-php-composer-autoload/</guid>
+      <description>&lt;h1 id=&#34;installing-proxmox-virtual-environment-on-raspberry-pi&#34;&gt;Installing Proxmox Virtual Environment on Raspberry Pi&lt;/h1&gt;&#xA;&lt;p&gt;Proxmox Virtual Environment is an open-source virtualization platform with a powerful web interface for managing virtual machines and containers. This tutorial will guide you through installing Proxmox 8 on a Raspberry Pi.&lt;/p&gt;&#xA;&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Update System&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt update&#xA;sudo apt upgrade&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Install curl&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt install curl&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Set Static IP&lt;/strong&gt;&lt;br&gt;&#xA;Configure a static IP on your Raspberry Pi.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Edit Hosts File&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo nano /etc/hosts&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Set Password for root User&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

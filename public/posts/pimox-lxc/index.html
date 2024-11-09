@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
+  <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+  <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Pimox Container Instalation | nazori Archive</title>
+  <link rel = 'canonical' href = 'http://localhost:1313/posts/pimox-lxc/'>
+  <meta name="description" content="This web is just for my personal long term memory.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:url" content="http://localhost:1313/posts/pimox-lxc/">
+  <meta property="og:site_name" content="nazori Archive">
+  <meta property="og:title" content="Pimox Container Instalation">
+  <meta property="og:description" content="Pimox Setup Guide Download the RootFS
+1# Download the rootfs 2wget &#34;${ROOTFS_DOWNLOAD_URL}&#34; -O &#34;${TEMPLATE_FILE_NAME}&#34; 3 4# Move rootfs to Proxmox template cache 5sudo mv debian_rootfs.tar.xz /var/lib/vz/template/cache/ 6 7Create a Container (CT) 8 9You can create a CT either via the GUI or terminal. To create it via terminal, use: 10 11pct create 200 /var/lib/vz/template/cache/${TEMPLATE_FILE_NAME} \ 12 --arch arm64 \ 13 --features nesting=1 \ 14 --hostname docker \ 15 --ostype debian \ 16 --net0 name=eth0,bridge=vmbr0,firewall=1,ip=dhcp,ip6=dhcp \ 17 --password=&#39;much $ecure passw0rd&#39; \ 18 --tags docker-host Explanation of Parameters">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-10-22T16:56:54+00:00">
+    <meta property="article:modified_time" content="2024-10-22T16:56:54+00:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Pimox Container Instalation">
+  <meta name="twitter:description" content="Pimox Setup Guide Download the RootFS
+1# Download the rootfs 2wget &#34;${ROOTFS_DOWNLOAD_URL}&#34; -O &#34;${TEMPLATE_FILE_NAME}&#34; 3 4# Move rootfs to Proxmox template cache 5sudo mv debian_rootfs.tar.xz /var/lib/vz/template/cache/ 6 7Create a Container (CT) 8 9You can create a CT either via the GUI or terminal. To create it via terminal, use: 10 11pct create 200 /var/lib/vz/template/cache/${TEMPLATE_FILE_NAME} \ 12 --arch arm64 \ 13 --features nesting=1 \ 14 --hostname docker \ 15 --ostype debian \ 16 --net0 name=eth0,bridge=vmbr0,firewall=1,ip=dhcp,ip6=dhcp \ 17 --password=&#39;much $ecure passw0rd&#39; \ 18 --tags docker-host Explanation of Parameters">
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/styles.c05d68261bf086a9d7713c4f8a6215a3601608e267a816a7ee58f139b3d1aae51222aae2081c8e0c6bd35e1334773b7a16283022f31f92afd93bb37e5e822e66.css" integrity="sha512-wF1oJhvwhqnXcTxPimIVo2AWCOJnqBan7ljxObPRquUSIqriCByODGvTXhM0dzt6FigwIvMfkq/ZO7N&#43;XoIuZg=="> 
+
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="http://localhost:1313/images/favicon.ico" />
+
+  
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" http://localhost:1313/posts/ichiran/" aria-label="Previous">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#" aria-label="Share">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fpimox-lxc%2f" aria-label="Facebook">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpimox-lxc%2f&text=Pimox%20Container%20Instalation" aria-label="Twitter">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpimox-lxc%2f&title=Pimox%20Container%20Instalation" aria-label="Linkedin">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpimox-lxc%2f&is_video=false&description=Pimox%20Container%20Instalation" aria-label="Pinterest">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Pimox%20Container%20Instalation&body=Check out this article: http%3a%2f%2flocalhost%3a1313%2fposts%2fpimox-lxc%2f" aria-label="Email">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpimox-lxc%2f&title=Pimox%20Container%20Instalation" aria-label="Pocket">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpimox-lxc%2f&title=Pimox%20Container%20Instalation" aria-label="reddit">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpimox-lxc%2f&name=Pimox%20Container%20Instalation&description=%3ch1%20id%3d%22pimox-setup-guide%22%3ePimox%20Setup%20Guide%3c%2fh1%3e%0a%3cp%3e%3ca%20href%3d%22https%3a%2f%2ffra1lxdmirror01.do.letsbuildthe.cloud%2fimages%2f%22%3eDownload%20the%20RootFS%3c%2fa%3e%3c%2fp%3e%0a%3cdiv%20class%3d%22highlight%22%3e%3cpre%20tabindex%3d%220%22%20style%3d%22color%3a%23f8f8f2%3bbackground-color%3a%23282a36%3b-moz-tab-size%3a4%3b-o-tab-size%3a4%3btab-size%3a4%3b%22%3e%3ccode%20class%3d%22language-bash%22%20data-lang%3d%22bash%22%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%201%3c%2fspan%3e%3cspan%3e%3cspan%20style%3d%22color%3a%236272a4%22%3e%23%20Download%20the%20rootfs%3c%2fspan%3e%0a%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%202%3c%2fspan%3e%3cspan%3ewget%20%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%26%2334%3b%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%24%7b%3c%2fspan%3e%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3eROOTFS_DOWNLOAD_URL%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%7d%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%26%2334%3b%3c%2fspan%3e%20-O%20%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%26%2334%3b%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%24%7b%3c%2fspan%3e%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3eTEMPLATE_FILE_NAME%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%7d%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%26%2334%3b%3c%2fspan%3e%0a%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%203%3c%2fspan%3e%3cspan%3e%0a%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%204%3c%2fspan%3e%3cspan%3e%3cspan%20style%3d%22color%3a%236272a4%22%3e%23%20Move%20rootfs%20to%20Proxmox%20template%20cache%3c%2fspan%3e%0a%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%205%3c%2fspan%3e%3cspan%3esudo%20mv%20debian_rootfs.tar.xz%20%2fvar%2flib%2fvz%2ftemplate%2fcache%2f%0a%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%206%3c%2fspan%3e%3cspan%3e%0a%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%207%3c%2fspan%3e%3cspan%3eCreate%20a%20Container%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%28%3c%2fspan%3eCT%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%29%3c%2fspan%3e%0a%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%208%3c%2fspan%3e%3cspan%3e%0a%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%209%3c%2fspan%3e%3cspan%3eYou%20can%20create%20a%20CT%20either%20via%20the%20GUI%20or%20terminal.%20To%20create%20it%20via%20terminal%2c%20use%3a%0a%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e10%3c%2fspan%3e%3cspan%3e%0a%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e11%3c%2fspan%3e%3cspan%3epct%20create%20%3cspan%20style%3d%22color%3a%23bd93f9%22%3e200%3c%2fspan%3e%20%2fvar%2flib%2fvz%2ftemplate%2fcache%2f%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%24%7b%3c%2fspan%3e%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3eTEMPLATE_FILE_NAME%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%7d%3c%2fspan%3e%20%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%5c%0a%3c%2fspan%3e%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e12%3c%2fspan%3e%3cspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%3c%2fspan%3e%20%20--arch%20arm64%20%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%5c%0a%3c%2fspan%3e%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e13%3c%2fspan%3e%3cspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%3c%2fspan%3e%20%20--features%20%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3enesting%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23bd93f9%22%3e1%3c%2fspan%3e%20%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%5c%0a%3c%2fspan%3e%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e14%3c%2fspan%3e%3cspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%3c%2fspan%3e%20%20--hostname%20docker%20%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%5c%0a%3c%2fspan%3e%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e15%3c%2fspan%3e%3cspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%3c%2fspan%3e%20%20--ostype%20debian%20%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%5c%0a%3c%2fspan%3e%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e16%3c%2fspan%3e%3cspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%3c%2fspan%3e%20%20--net0%20%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3ename%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3eeth0%2cbridge%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3evmbr0%2cfirewall%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e1%2cip%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3edhcp%2cip6%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3edhcp%20%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%5c%0a%3c%2fspan%3e%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e17%3c%2fspan%3e%3cspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%3c%2fspan%3e%20%20--password%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%26%2339%3bmuch%20%24ecure%20passw0rd%26%2339%3b%3c%2fspan%3e%20%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%5c%0a%3c%2fspan%3e%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e18%3c%2fspan%3e%3cspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%3c%2fspan%3e%20%20--tags%20docker-host%0a%3c%2fspan%3e%3c%2fspan%3e%3c%2fcode%3e%3c%2fpre%3e%3c%2fdiv%3e%3cp%3eExplanation%20of%20Parameters%3c%2fp%3e" aria-label="Tumblr">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fpimox-lxc%2f&t=Pimox%20Container%20Instalation" aria-label="Hacker News">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#network-configuration-for-container">Network Configuration for Container</a></li>
+  </ul>
+</nav>
+    </div>
+    
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Pimox Container Instalation
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2024-10-22 16:56:54 &#43;0000 UTC" itemprop="datePublished">2024-10-22</time>
+          
+        </div>
+        
+        
+        <div class="article-read-time">
+          <i class="far fa-clock"></i>
+          
+          1 minute read
+        </div>
+        
+        
+        
+      </div>
+    </header>
+
+  
+    
+    <div class="content" itemprop="articleBody">
+      <h1 id="pimox-setup-guide">Pimox Setup Guide</h1>
+<p><a href="https://fra1lxdmirror01.do.letsbuildthe.cloud/images/">Download the RootFS</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#6272a4"># Download the rootfs</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>wget <span style="color:#f1fa8c">&#34;</span><span style="color:#f1fa8c">${</span><span style="color:#8be9fd;font-style:italic">ROOTFS_DOWNLOAD_URL</span><span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#34;</span> -O <span style="color:#f1fa8c">&#34;</span><span style="color:#f1fa8c">${</span><span style="color:#8be9fd;font-style:italic">TEMPLATE_FILE_NAME</span><span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span><span style="color:#6272a4"># Move rootfs to Proxmox template cache</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>sudo mv debian_rootfs.tar.xz /var/lib/vz/template/cache/
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>Create a Container <span style="color:#ff79c6">(</span>CT<span style="color:#ff79c6">)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>You can create a CT either via the GUI or terminal. To create it via terminal, use:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>pct create <span style="color:#bd93f9">200</span> /var/lib/vz/template/cache/<span style="color:#f1fa8c">${</span><span style="color:#8be9fd;font-style:italic">TEMPLATE_FILE_NAME</span><span style="color:#f1fa8c">}</span> <span style="color:#f1fa8c">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span><span style="color:#f1fa8c"></span>  --arch arm64 <span style="color:#f1fa8c">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span><span style="color:#f1fa8c"></span>  --features <span style="color:#8be9fd;font-style:italic">nesting</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">1</span> <span style="color:#f1fa8c">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span><span style="color:#f1fa8c"></span>  --hostname docker <span style="color:#f1fa8c">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span><span style="color:#f1fa8c"></span>  --ostype debian <span style="color:#f1fa8c">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span><span style="color:#f1fa8c"></span>  --net0 <span style="color:#8be9fd;font-style:italic">name</span><span style="color:#ff79c6">=</span>eth0,bridge<span style="color:#ff79c6">=</span>vmbr0,firewall<span style="color:#ff79c6">=</span>1,ip<span style="color:#ff79c6">=</span>dhcp,ip6<span style="color:#ff79c6">=</span>dhcp <span style="color:#f1fa8c">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span><span style="color:#f1fa8c"></span>  --password<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;much $ecure passw0rd&#39;</span> <span style="color:#f1fa8c">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span><span style="color:#f1fa8c"></span>  --tags docker-host
+</span></span></code></pre></div><p>Explanation of Parameters</p>
+<pre><code>•	pct create: Command to create a CT container.
+•	200: Unique ID for the VM (choose between 1 - N).
+•	/var/lib/vz/template/cache/${TEMPLATE_FILE_NAME}: Path to the OS template or backup file.
+•	--arch arm64: Architecture (for Raspberry Pi, arm64).
+•	--features nesting=1: Enable nesting, required for Docker.
+•	--hostname docker: Hostname for the container on the network.
+•	--ostype debian: OS type, matching the template we chose.
+•	--net0 name=eth0,bridge=vmbr0,firewall=1,ip=dhcp,ip6=dhcp: Network settings.
+•	--ssh-public-keys ~/.ssh/id_rsa.pub: (Optional) SSH keys for root user.
+•	--ssh-public-keys ~/.ssh/remote_id_rsa.pub: (Optional) SSH keys for user.
+•	--password='much $ecure passw0rd': Password for container (alternative to SSH key).
+•	--tags docker-host: Tags for the container (meta information).
+</code></pre>
+<h2 id="network-configuration-for-container">Network Configuration for Container</h2>
+<p>When configuring the CT, set IP to Static. Do not enter any specific IP addresses.
+Edit the Network Configuration File</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>nano /etc/systemd/network/eth0.network
+</span></span></code></pre></div><p>Add the following configuration:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#ff79c6">[</span>Match<span style="color:#ff79c6">]</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#8be9fd;font-style:italic">Name</span><span style="color:#ff79c6">=</span>eth0
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#ff79c6">[</span>Network<span style="color:#ff79c6">]</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#8be9fd;font-style:italic">DHCP</span><span style="color:#ff79c6">=</span>yes
+</span></span></code></pre></div><p>Restart Systemd Networkd
+To apply changes, restart systemd-networkd:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>systemctl restart systemd-networkd
+</span></span></code></pre></div><p>Verify IP Settings</p>
+<p>Check if the static IP is set (the DHCP IP may still appear):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>ip -c a
+</span></span></code></pre></div><p>After reboot, the static IP should be correctly set up.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+  <div class="blog-post-comments">
+    
+      <div id="cactus-comments-thread">
+  <script>
+  initComments({
+    node: document.getElementById("cactus-comments-thread"),
+    defaultHomeserverUrl: 'https:\/\/matrix.cactus.chat:8448',
+    serverName: 'cactus.chat',
+    siteName: "your_cactus_comments_sitename",
+    commentSectionId: "\/posts\/pimox-lxc\/"
+  })
+</script>
+</div>
+
+    
+  </div>
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/posts">Writings</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/about">About</a></li>
+        
+      </ul>
+    </div>
+
+    
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#network-configuration-for-container">Network Configuration for Container</a></li>
+  </ul>
+</nav>
+    </div>
+    
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fpimox-lxc%2f" aria-label="Facebook">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpimox-lxc%2f&text=Pimox%20Container%20Instalation" aria-label="Twitter">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpimox-lxc%2f&title=Pimox%20Container%20Instalation" aria-label="Linkedin">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpimox-lxc%2f&is_video=false&description=Pimox%20Container%20Instalation" aria-label="Pinterest">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Pimox%20Container%20Instalation&body=Check out this article: http%3a%2f%2flocalhost%3a1313%2fposts%2fpimox-lxc%2f" aria-label="Email">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpimox-lxc%2f&title=Pimox%20Container%20Instalation" aria-label="Pocket">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpimox-lxc%2f&title=Pimox%20Container%20Instalation" aria-label="reddit">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fpimox-lxc%2f&name=Pimox%20Container%20Instalation&description=%3ch1%20id%3d%22pimox-setup-guide%22%3ePimox%20Setup%20Guide%3c%2fh1%3e%0a%3cp%3e%3ca%20href%3d%22https%3a%2f%2ffra1lxdmirror01.do.letsbuildthe.cloud%2fimages%2f%22%3eDownload%20the%20RootFS%3c%2fa%3e%3c%2fp%3e%0a%3cdiv%20class%3d%22highlight%22%3e%3cpre%20tabindex%3d%220%22%20style%3d%22color%3a%23f8f8f2%3bbackground-color%3a%23282a36%3b-moz-tab-size%3a4%3b-o-tab-size%3a4%3btab-size%3a4%3b%22%3e%3ccode%20class%3d%22language-bash%22%20data-lang%3d%22bash%22%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%201%3c%2fspan%3e%3cspan%3e%3cspan%20style%3d%22color%3a%236272a4%22%3e%23%20Download%20the%20rootfs%3c%2fspan%3e%0a%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%202%3c%2fspan%3e%3cspan%3ewget%20%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%26%2334%3b%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%24%7b%3c%2fspan%3e%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3eROOTFS_DOWNLOAD_URL%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%7d%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%26%2334%3b%3c%2fspan%3e%20-O%20%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%26%2334%3b%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%24%7b%3c%2fspan%3e%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3eTEMPLATE_FILE_NAME%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%7d%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%26%2334%3b%3c%2fspan%3e%0a%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%203%3c%2fspan%3e%3cspan%3e%0a%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%204%3c%2fspan%3e%3cspan%3e%3cspan%20style%3d%22color%3a%236272a4%22%3e%23%20Move%20rootfs%20to%20Proxmox%20template%20cache%3c%2fspan%3e%0a%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%205%3c%2fspan%3e%3cspan%3esudo%20mv%20debian_rootfs.tar.xz%20%2fvar%2flib%2fvz%2ftemplate%2fcache%2f%0a%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%206%3c%2fspan%3e%3cspan%3e%0a%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%207%3c%2fspan%3e%3cspan%3eCreate%20a%20Container%20%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%28%3c%2fspan%3eCT%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%29%3c%2fspan%3e%0a%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%208%3c%2fspan%3e%3cspan%3e%0a%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e%209%3c%2fspan%3e%3cspan%3eYou%20can%20create%20a%20CT%20either%20via%20the%20GUI%20or%20terminal.%20To%20create%20it%20via%20terminal%2c%20use%3a%0a%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e10%3c%2fspan%3e%3cspan%3e%0a%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e11%3c%2fspan%3e%3cspan%3epct%20create%20%3cspan%20style%3d%22color%3a%23bd93f9%22%3e200%3c%2fspan%3e%20%2fvar%2flib%2fvz%2ftemplate%2fcache%2f%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%24%7b%3c%2fspan%3e%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3eTEMPLATE_FILE_NAME%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%7d%3c%2fspan%3e%20%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%5c%0a%3c%2fspan%3e%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e12%3c%2fspan%3e%3cspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%3c%2fspan%3e%20%20--arch%20arm64%20%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%5c%0a%3c%2fspan%3e%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e13%3c%2fspan%3e%3cspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%3c%2fspan%3e%20%20--features%20%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3enesting%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23bd93f9%22%3e1%3c%2fspan%3e%20%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%5c%0a%3c%2fspan%3e%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e14%3c%2fspan%3e%3cspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%3c%2fspan%3e%20%20--hostname%20docker%20%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%5c%0a%3c%2fspan%3e%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e15%3c%2fspan%3e%3cspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%3c%2fspan%3e%20%20--ostype%20debian%20%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%5c%0a%3c%2fspan%3e%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e16%3c%2fspan%3e%3cspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%3c%2fspan%3e%20%20--net0%20%3cspan%20style%3d%22color%3a%238be9fd%3bfont-style%3aitalic%22%3ename%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3eeth0%2cbridge%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3evmbr0%2cfirewall%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e1%2cip%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3edhcp%2cip6%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3edhcp%20%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%5c%0a%3c%2fspan%3e%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e17%3c%2fspan%3e%3cspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%3c%2fspan%3e%20%20--password%3cspan%20style%3d%22color%3a%23ff79c6%22%3e%3d%3c%2fspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%26%2339%3bmuch%20%24ecure%20passw0rd%26%2339%3b%3c%2fspan%3e%20%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%5c%0a%3c%2fspan%3e%3c%2fspan%3e%3c%2fspan%3e%3cspan%20style%3d%22display%3aflex%3b%22%3e%3cspan%20style%3d%22white-space%3apre%3b-webkit-user-select%3anone%3buser-select%3anone%3bmargin-right%3a0.4em%3bpadding%3a0%200.4em%200%200.4em%3bcolor%3a%237f7f7f%22%3e18%3c%2fspan%3e%3cspan%3e%3cspan%20style%3d%22color%3a%23f1fa8c%22%3e%3c%2fspan%3e%20%20--tags%20docker-host%0a%3c%2fspan%3e%3c%2fspan%3e%3c%2fcode%3e%3c%2fpre%3e%3c%2fdiv%3e%3cp%3eExplanation%20of%20Parameters%3c%2fp%3e" aria-label="Tumblr">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fpimox-lxc%2f&t=Pimox%20Container%20Instalation" aria-label="Hacker News">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2024  You 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
+
+
+
+</html>

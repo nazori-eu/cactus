@@ -1,14 +1,14 @@
 {
   "list": [
     {
-      "name":"Hugo",
-      "url":"https://gohugo.io/",
-      "desc":"The world’s fastest framework for building websites."
+      "name":"La Teixera",
+      "url":"https://lateixera.cat/",
+      "desc":"Nature and its complex, self-reflective relationship."
     },
     {
-      "name":"Hugo Themes",
-      "url":"https://github.com/gohugoio/hugoThemes",
-      "desc":"A curated directory of Hugo themes"
+      "name":"pir",
+      "url":"https://pir.nz/en/",
+      "desc":"..."
     }
   ]
 }

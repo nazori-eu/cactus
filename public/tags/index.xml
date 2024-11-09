@@ -17,10 +17,17 @@
       <description></description>
     </item>
     <item>
-      <title>Php</title>
-      <link>http://localhost:1313/tags/php/</link>
+      <title>Proxmox</title>
+      <link>http://localhost:1313/tags/proxmox/</link>
       <pubDate>Sat, 05 Nov 2016 02:42:06 +0000</pubDate>
-      <guid>http://localhost:1313/tags/php/</guid>
+      <guid>http://localhost:1313/tags/proxmox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Raspberry</title>
+      <link>http://localhost:1313/tags/raspberry/</link>
+      <pubDate>Sat, 05 Nov 2016 02:42:06 +0000</pubDate>
+      <guid>http://localhost:1313/tags/raspberry/</guid>
       <description></description>
     </item>
   </channel>
