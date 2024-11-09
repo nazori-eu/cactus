@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on nazori Archive</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>http://localhost:1313//archive.nazori.eu/tags/</link>
     <description>Recent content in Tags on nazori Archive</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>You</copyright>
-    <lastBuildDate>Sun, 27 Jun 2021 09:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Oct 2024 09:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313//archive.nazori.eu/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test</title>
-      <link>http://localhost:1313/tags/test/</link>
-      <pubDate>Sun, 27 Jun 2021 09:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/test/</guid>
+      <title>Ramen</title>
+      <link>http://localhost:1313//archive.nazori.eu/tags/ramen/</link>
+      <pubDate>Sun, 27 Oct 2024 09:00:00 +0000</pubDate>
+      <guid>http://localhost:1313//archive.nazori.eu/tags/ramen/</guid>
       <description></description>
     </item>
     <item>
       <title>Proxmox</title>
-      <link>http://localhost:1313/tags/proxmox/</link>
+      <link>http://localhost:1313//archive.nazori.eu/tags/proxmox/</link>
       <pubDate>Sat, 05 Nov 2016 02:42:06 +0000</pubDate>
-      <guid>http://localhost:1313/tags/proxmox/</guid>
+      <guid>http://localhost:1313//archive.nazori.eu/tags/proxmox/</guid>
       <description></description>
     </item>
     <item>
       <title>Raspberry</title>
-      <link>http://localhost:1313/tags/raspberry/</link>
+      <link>http://localhost:1313//archive.nazori.eu/tags/raspberry/</link>
       <pubDate>Sat, 05 Nov 2016 02:42:06 +0000</pubDate>
-      <guid>http://localhost:1313/tags/raspberry/</guid>
+      <guid>http://localhost:1313//archive.nazori.eu/tags/raspberry/</guid>
       <description></description>
     </item>
   </channel>
