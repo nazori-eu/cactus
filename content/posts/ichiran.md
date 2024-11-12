@@ -2,7 +2,7 @@
 title: Ichiran
 date: 2024-10-27 09:00:00
 tags:
-    - ramen
+    - recipe
 categories:
     - recipe
 keywords:
