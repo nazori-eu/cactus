@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recipe on nazori Archive</title>
-    <link>http://localhost:1313/categories/recipe/</link>
+    <link>http://localhost:1313/tags/recipe/</link>
     <description>Recent content in Recipe on nazori Archive</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>You</copyright>
     <lastBuildDate>Tue, 12 Nov 2024 09:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/recipe/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/recipe/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alubias Suaves</title>
       <link>http://localhost:1313/posts/alubias-suaves/</link>

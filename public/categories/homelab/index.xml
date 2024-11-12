@@ -1,34 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on nazori Archive</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on nazori Archive</description>
+    <title>Homelab on nazori Archive</title>
+    <link>http://localhost:1313/categories/homelab/</link>
+    <description>Recent content in Homelab on nazori Archive</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>You</copyright>
-    <lastBuildDate>Tue, 12 Nov 2024 09:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Alubias Suaves</title>
-      <link>http://localhost:1313/posts/alubias-suaves/</link>
-      <pubDate>Tue, 12 Nov 2024 09:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/alubias-suaves/</guid>
-      <description>&lt;h1 id=&#34;alubias-suaves&#34;&gt;Alubias Suaves&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ingredientes&#34;&gt;Ingredientes&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Judías blancas cocidas (de bote)&lt;/li&gt;&#xA;&lt;li&gt;1 hoja de laurel&lt;/li&gt;&#xA;&lt;li&gt;1 cucharadita de pimentón&lt;/li&gt;&#xA;&lt;li&gt;1 zanahoria&lt;/li&gt;&#xA;&lt;li&gt;1 cebolla&lt;/li&gt;&#xA;&lt;li&gt;1 diente de ajo&lt;/li&gt;&#xA;&lt;li&gt;1 patata&lt;/li&gt;&#xA;&lt;li&gt;1 tomate&lt;/li&gt;&#xA;&lt;li&gt;1 pimiento verde italiano&lt;/li&gt;&#xA;&lt;li&gt;Aceite de oliva virgen extra&lt;/li&gt;&#xA;&lt;li&gt;Sal&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;instrucciones&#34;&gt;Instrucciones&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-preparar-los-ingredientes&#34;&gt;1. Preparar los ingredientes&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pica la cebolla, el ajo, el pimiento verde, el tomate y la zanahoria en trozos pequeños.&lt;/li&gt;&#xA;&lt;li&gt;Pela y corta la patata en cubos pequeños.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;2-sofrito&#34;&gt;2. Sofrito&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;En una cazuela grande, calienta un buen chorro de aceite de oliva virgen extra.&lt;/li&gt;&#xA;&lt;li&gt;Añade la cebolla y el ajo picados y sofríe a fuego medio hasta que estén dorados.&lt;/li&gt;&#xA;&lt;li&gt;Incorpora el pimiento verde y la zanahoria, y cocina unos minutos más.&lt;/li&gt;&#xA;&lt;li&gt;Añade el tomate picado y deja que se cocine hasta que se deshaga.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;3-añadir-condimentos&#34;&gt;3. Añadir condimentos&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Agrega la hoja de laurel y una cucharadita de pimentón. Remueve bien para que se mezcle todo.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;4-cocinar-la-patata&#34;&gt;4. Cocinar la patata&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Añade los cubos de patata a la cazuela y cubre con agua o caldo (aproximadamente hasta cubrir los ingredientes).&lt;/li&gt;&#xA;&lt;li&gt;Cocina a fuego medio hasta que la patata esté tierna, unos 15-20 minutos.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;5-triturar-parte-de-la-mezcla&#34;&gt;5. Triturar parte de la mezcla&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Aparta una parte de la mezcla de verduras y patata y tritúrala con una batidora.&lt;/li&gt;&#xA;&lt;li&gt;Devuelve la mezcla triturada a la cazuela para darle más consistencia al caldo.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;6-añadir-las-judías&#34;&gt;6. Añadir las judías&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Escurre y enjuaga las judías blancas de bote.&lt;/li&gt;&#xA;&lt;li&gt;Agrégalas a la cazuela y cocina unos 5-10 minutos más para que se integren los sabores.&lt;/li&gt;&#xA;&lt;li&gt;Ajusta de sal al gusto.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;7-servir&#34;&gt;7. Servir&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Retira la hoja de laurel antes de servir.&lt;/li&gt;&#xA;&lt;li&gt;Sirve caliente con un chorrito de aceite de oliva virgen extra por encima.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
+    <lastBuildDate>Tue, 05 Nov 2024 02:42:06 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/homelab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install Pimox8 Raspberry</title>
       <link>http://localhost:1313/posts/pimox/</link>
       <pubDate>Tue, 05 Nov 2024 02:42:06 +0000</pubDate>
       <guid>http://localhost:1313/posts/pimox/</guid>
       <description>&lt;h1 id=&#34;installing-proxmox-virtual-environment-on-raspberry-pi&#34;&gt;Installing Proxmox Virtual Environment on Raspberry Pi&lt;/h1&gt;&#xA;&lt;p&gt;Proxmox Virtual Environment is an open-source virtualization platform with a powerful web interface for managing virtual machines and containers. This tutorial will guide you through installing Proxmox 8 on a Raspberry Pi.&lt;/p&gt;&#xA;&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Update System&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt update&#xA;sudo apt upgrade&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Install curl&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt install curl&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Set Static IP&lt;/strong&gt;&lt;br&gt;&#xA;Configure a static IP on your Raspberry Pi.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Edit Hosts File&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo nano /etc/hosts&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Set Password for root User&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Ichiran</title>
-      <link>http://localhost:1313/posts/ichiran/</link>
-      <pubDate>Sun, 27 Oct 2024 09:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ichiran/</guid>
-      <description>&lt;h1 id=&#34;ichiran-ramen-recipe&#34;&gt;Ichiran Ramen Recipe&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Recreate the famous Ichiran Ramen with this authentic recipe. It includes a rich pork broth, flavorful tare, soft noodles, and tender chashu pork. The secret red sauce adds a unique spice to complete the dish.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ingredients&#34;&gt;Ingredients&lt;/h2&gt;&#xA;&lt;h3 id=&#34;broth&#34;&gt;Broth&lt;/h3&gt;&#xA;&lt;p&gt;A rich and hearty broth made with pork spine and water.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pork spine (2kg)&lt;/li&gt;&#xA;&lt;li&gt;Water (2kg)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;noodles&#34;&gt;Noodles&lt;/h3&gt;&#xA;&lt;p&gt;These ingredients will create the ramen noodles, giving them the right texture and flavor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LXC Container on Pimox</title>

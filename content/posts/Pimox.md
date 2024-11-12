@@ -1,7 +1,7 @@
 ---
 title: Install Pimox8 Raspberry
-date: 2016-11-05 02:42:06
-category: tech
+date: 2024-11-05 02:42:06
+categories: homelab
 tags:
     - raspberry
     - proxmox
