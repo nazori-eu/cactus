@@ -1,7 +1,8 @@
 ---
 title: LXC Container on Pimox
 date: 2024-10-22 16:56:54
-categories: homelab
+categories:
+    - homelab
 keywords: 
 ---
 

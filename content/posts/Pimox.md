@@ -5,10 +5,8 @@ categories: homelab
 tags:
     - raspberry
     - proxmox
-keywords:
-    - composer
-    - autoload
-    - psr-4
+categories:
+    - homelab
 ---
 
 # Installing Proxmox Virtual Environment on Raspberry Pi
