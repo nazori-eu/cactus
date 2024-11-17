@@ -14,42 +14,51 @@ keywords:
 ## Introduction
 Recreate the famous Ichiran Ramen with this authentic recipe. It includes a rich pork broth, flavorful tare, soft noodles, and tender chashu pork. The secret red sauce adds a unique spice to complete the dish.
 
-## Ingredients
+## Broth
 
-### Broth
-A rich and hearty broth made with pork spine and water.
-
+### Ingredients
 - Pork spine (2kg)
+- Pork Fat (500g)
 - Water (2kg)
 
-### Noodles
-These ingredients will create the ramen noodles, giving them the right texture and flavor.
+### Preparation
+- Crush the 2kg pork spine into smaller pieces and boil them in hot water for 1-2 minutes
+- Clean them with cold water and remove the spinal cord
+- Boil the pork spine, pork paw and 2,2L water in a pressure cooker on the highest setting for 30min
+- Wait until the broth stopped boiling and add 1L of water
+- Break the spine into smaller pieces with a spoon
+- Boil the broth again with the lid removed for 1 hour
+- Filter the broth with a fine sieve
 
-- Baking flour (300g)
-- Water (90g)
-- Salt (3g)
-- Baking soda (4g)
+## Tare
 
-### Tare
-This seasoning base combines seaweed, dried fish, mushrooms, and soy sauce to create the ramen's deep, umami-rich flavor.
+### Ingredients
+- 150ml water
+- 100ml soy sauce
+- 25ml sake
+- 15ml mirin
+- 10g ajinomoto
+- 18g salt
+- Konbu (seaweed) 
+- Bonito (katsuobushi)
+- Shiitake mushroom
 
-- Konbu (seaweed) (15g)
-- Dried sardine (20g)
-- Bonito (katsuobushi) (20g)
-- Shiitake mushroom (10g)
-- Light soy sauce (usukuchi shoyu) (300ml)
-- Salt (12g)
-- Sugar (5g)
+### Preparation
+- All in a pot, cook the tare briefly
 
-### Chashu
-Tender, marinated pork shoulder that is slow-cooked to perfection.
+## Chashu
 
+### Ingredients
 - Pork shoulder
 - Soy sauce (500ml)
 - Water (100ml)
 - Sake (100ml)
 - Sugar (80g)
 - Garlic, ginger
+
+### Preparation
+- Cook as long as you want in a pot, the longer the tenderer.
+
 
 ### Secret Red Sauce
 A spicy sauce that adds a flavorful kick to your ramen.
@@ -62,6 +71,3 @@ A spicy sauce that adds a flavorful kick to your ramen.
 - Chili bean sauce (1 tbsp)
 - Garlic, ginger
 - Honey (50g)
-
-## Conclusion
-Enjoy your homemade Ichiran Ramen with all the essential components: rich broth, tasty noodles, flavorful tare, tender chashu, and a spicy secret red sauce.

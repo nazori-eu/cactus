@@ -7,19 +7,19 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>You</copyright>
-    <lastBuildDate>Tue, 12 Nov 2024 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 Nov 2024 09:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Recipe</title>
       <link>http://localhost:1313/categories/recipe/</link>
-      <pubDate>Tue, 12 Nov 2024 09:00:00 +0000</pubDate>
+      <pubDate>Sun, 17 Nov 2024 09:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/recipe/</guid>
       <description></description>
     </item>
     <item>
       <title>Homelab</title>
       <link>http://localhost:1313/categories/homelab/</link>
-      <pubDate>Tue, 22 Oct 2024 16:56:54 +0000</pubDate>
+      <pubDate>Wed, 13 Nov 2024 09:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/homelab/</guid>
       <description></description>
     </item>
