@@ -89,3 +89,4 @@ keywords:
 - Adjust with water if too salty, or add soy sauce/MSG for more flavor.  
 - Let the broth rest for **30 minutes** for extra depth before reheating and serving.  
 
+![Delicious Creamy Ramen](/files/ramen-chicken.jpeg)
