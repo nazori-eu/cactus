@@ -7,8 +7,36 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>You</copyright>
-    <lastBuildDate>Tue, 17 Dec 2024 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Readings</title>
+      <link>http://localhost:1313/readings/</link>
+      <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/readings/</guid>
+      <description>&lt;h1 id=&#34;1-book-a-month-bois&#34;&gt;1 book a month bois&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/16139457-industrias-y-andanzas-de-alfanhu?from_search=true&amp;amp;from_srp=true&amp;amp;qid=ZAxyWQJT93&amp;amp;rank=1&#34;&gt;Industrias y andanzas de Alfanhuí&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/16902.Walden&#34;&gt;Walden - Henry David Thoreau&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/61533449-la-poes-a-no-se-consume?from_search=true&amp;amp;from_srp=true&amp;amp;qid=GUt6wrebf9&amp;amp;rank=1&#34;&gt;La poesía no se consume - Pier Paolo Pasolini&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/46264376-el-arte-de-recomenzar&#34;&gt;El arte de recomenzar - Fabio Rosini&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/50202953-piranesi?from_search=true&amp;amp;from_srp=true&amp;amp;qid=XRZqDcsJrc&amp;amp;rank=1&#34;&gt;Piranesi - Alessandro Baricco&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Ollama in Rasberry Pi 5</title>
+      <link>http://localhost:1313/posts/ollama-raspberry/</link>
+      <pubDate>Tue, 21 Jan 2025 09:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ollama-raspberry/</guid>
+      <description>&lt;h2 id=&#34;what-is-ollama&#34;&gt;What is Ollama?&lt;/h2&gt;&#xA;&lt;p&gt;Ollama is a platform designed to run state-of-the-art AI models locally on your device. It simplifies the process of deploying large language models (LLMs) like &lt;strong&gt;Qwen-2.5 (3B)&lt;/strong&gt; and &lt;strong&gt;Gemma2 (2B)&lt;/strong&gt; on systems like the &lt;strong&gt;Raspberry Pi 5&lt;/strong&gt;. By supporting both low- and high-complexity models, Ollama lets users run sophisticated AI directly on their devices without needing cloud services.&lt;/p&gt;&#xA;&lt;p&gt;With &lt;strong&gt;Ollama&lt;/strong&gt; running on your Raspberry Pi 5, you can have easy access to AI for tasks like generating text, answering questions, and more—all with a local, efficient setup.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SSH Tunneling</title>
+      <link>http://localhost:1313/posts/ssh-tunneling/</link>
+      <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ssh-tunneling/</guid>
+      <description>&lt;p&gt;SSH tunneling allows you to securely forward traffic from one machine to another over an encrypted SSH connection. This is useful for accessing services behind firewalls or encrypting non-secure protocols.&lt;/p&gt;&#xA;&lt;h2 id=&#34;types-of-ssh-tunneling&#34;&gt;Types of SSH Tunneling&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Local Port Forwarding&lt;/strong&gt;&lt;br&gt;&#xA;Forwards a local port to a remote machine&amp;rsquo;s port.&lt;br&gt;&#xA;Example: &lt;code&gt;ssh -L 8080:remotehost:80 user@server&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Remote Port Forwarding&lt;/strong&gt;&lt;br&gt;&#xA;Forwards a remote port to a local machine&amp;rsquo;s port.&lt;br&gt;&#xA;Example: &lt;code&gt;ssh -R 9090:localhost:3306 user@server&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Dynamic Port Forwarding&lt;/strong&gt;&lt;br&gt;&#xA;Acts as a SOCKS proxy to route traffic dynamically.&lt;br&gt;&#xA;Example: &lt;code&gt;ssh -D 1080 user@server&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Spain Air Quality</title>
+      <link>http://localhost:1313/posts/air-quality/</link>
+      <pubDate>Wed, 18 Dec 2024 09:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/air-quality/</guid>
+      <description>&lt;h3 id=&#34;important-air-pollutants&#34;&gt;&lt;strong&gt;Important Air Pollutants&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;PM2.5 (Fine Particulate Matter)&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Extremely small particles (less than 2.5 micrometers) that penetrate deep into the lungs and bloodstream.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sources&lt;/strong&gt;: Traffic emissions, industrial activities, wildfires.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Why It Matters&lt;/strong&gt;: PM2.5 is closely linked to long-term health risks and reduced air quality in urban areas.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;PM10 (Coarse Particulate Matter)&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Larger particles (up to 10 micrometers) that can be inhaled into the respiratory system.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sources&lt;/strong&gt;: Road dust, construction activities, natural dust from deserts.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Why It Matters&lt;/strong&gt;: PM10 contributes to respiratory issues and environmental degradation.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;NO2 (Nitrogen Dioxide)&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Blend Chicken Ramen</title>
       <link>http://localhost:1313/posts/blend-chicken-ramen/</link>

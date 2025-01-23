@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homelab on nazori Archive</title>
+    <link>http://localhost:1313/tags/homelab/</link>
+    <description>Recent content in Homelab on nazori Archive</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>You</copyright>
+    <lastBuildDate>Tue, 21 Jan 2025 09:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/homelab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ollama in Rasberry Pi 5</title>
+      <link>http://localhost:1313/posts/ollama-raspberry/</link>
+      <pubDate>Tue, 21 Jan 2025 09:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ollama-raspberry/</guid>
+      <description>&lt;h2 id=&#34;what-is-ollama&#34;&gt;What is Ollama?&lt;/h2&gt;&#xA;&lt;p&gt;Ollama is a platform designed to run state-of-the-art AI models locally on your device. It simplifies the process of deploying large language models (LLMs) like &lt;strong&gt;Qwen-2.5 (3B)&lt;/strong&gt; and &lt;strong&gt;Gemma2 (2B)&lt;/strong&gt; on systems like the &lt;strong&gt;Raspberry Pi 5&lt;/strong&gt;. By supporting both low- and high-complexity models, Ollama lets users run sophisticated AI directly on their devices without needing cloud services.&lt;/p&gt;&#xA;&lt;p&gt;With &lt;strong&gt;Ollama&lt;/strong&gt; running on your Raspberry Pi 5, you can have easy access to AI for tasks like generating text, answering questions, and more—all with a local, efficient setup.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

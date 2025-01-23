@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hacking on nazori Archive</title>
+    <link>http://localhost:1313/tags/hacking/</link>
+    <description>Recent content in Hacking on nazori Archive</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>You</copyright>
+    <lastBuildDate>Thu, 09 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSH Tunneling</title>
+      <link>http://localhost:1313/posts/ssh-tunneling/</link>
+      <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ssh-tunneling/</guid>
+      <description>&lt;p&gt;SSH tunneling allows you to securely forward traffic from one machine to another over an encrypted SSH connection. This is useful for accessing services behind firewalls or encrypting non-secure protocols.&lt;/p&gt;&#xA;&lt;h2 id=&#34;types-of-ssh-tunneling&#34;&gt;Types of SSH Tunneling&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Local Port Forwarding&lt;/strong&gt;&lt;br&gt;&#xA;Forwards a local port to a remote machine&amp;rsquo;s port.&lt;br&gt;&#xA;Example: &lt;code&gt;ssh -L 8080:remotehost:80 user@server&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Remote Port Forwarding&lt;/strong&gt;&lt;br&gt;&#xA;Forwards a remote port to a local machine&amp;rsquo;s port.&lt;br&gt;&#xA;Example: &lt;code&gt;ssh -R 9090:localhost:3306 user@server&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Dynamic Port Forwarding&lt;/strong&gt;&lt;br&gt;&#xA;Acts as a SOCKS proxy to route traffic dynamically.&lt;br&gt;&#xA;Example: &lt;code&gt;ssh -D 1080 user@server&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

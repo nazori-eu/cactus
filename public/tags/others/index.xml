@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Others on nazori Archive</title>
+    <link>http://localhost:1313/tags/others/</link>
+    <description>Recent content in Others on nazori Archive</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>You</copyright>
+    <lastBuildDate>Wed, 18 Dec 2024 09:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/others/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spain Air Quality</title>
+      <link>http://localhost:1313/posts/air-quality/</link>
+      <pubDate>Wed, 18 Dec 2024 09:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/air-quality/</guid>
+      <description>&lt;h3 id=&#34;important-air-pollutants&#34;&gt;&lt;strong&gt;Important Air Pollutants&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;PM2.5 (Fine Particulate Matter)&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Extremely small particles (less than 2.5 micrometers) that penetrate deep into the lungs and bloodstream.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sources&lt;/strong&gt;: Traffic emissions, industrial activities, wildfires.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Why It Matters&lt;/strong&gt;: PM2.5 is closely linked to long-term health risks and reduced air quality in urban areas.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;PM10 (Coarse Particulate Matter)&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Larger particles (up to 10 micrometers) that can be inhaled into the respiratory system.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sources&lt;/strong&gt;: Road dust, construction activities, natural dust from deserts.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Why It Matters&lt;/strong&gt;: PM10 contributes to respiratory issues and environmental degradation.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;NO2 (Nitrogen Dioxide)&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

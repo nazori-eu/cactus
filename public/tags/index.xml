@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>You</copyright>
-    <lastBuildDate>Tue, 17 Dec 2024 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jan 2025 09:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Homelab</title>
+      <link>http://localhost:1313/tags/homelab/</link>
+      <pubDate>Tue, 21 Jan 2025 09:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/homelab/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hacking</title>
+      <link>http://localhost:1313/tags/hacking/</link>
+      <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hacking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Others</title>
+      <link>http://localhost:1313/tags/others/</link>
+      <pubDate>Wed, 18 Dec 2024 09:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/others/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Recipe</title>
       <link>http://localhost:1313/tags/recipe/</link>
