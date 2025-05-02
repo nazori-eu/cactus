@@ -1,3 +1,15 @@
+---
+title: Tonkotsu Express
+date: 2025-5-2 09:00:00
+tags:
+    - recipe
+categories:
+    - recipe
+keywords:
+    - markdown
+    - code block
+---
+
 # Mastering Tonkotsu Ramen Broth (Plus Tare, Chashu & Aroma Oil)
 
 This recipe guides you through creating a rich, creamy Tonkotsu pork bone broth, the heart of a truly satisfying bowl of ramen. We'll also cover a simple shoyu tare, garlic aroma oil, and a delicious sous vide chashu.
