@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Radio on nazori Archive</title>
+    <link>http://localhost:1313/categories/radio/</link>
+    <description>Recent content in Radio on nazori Archive</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>You</copyright>
+    <lastBuildDate>Sun, 04 May 2025 09:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/radio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tonkotsu Express</title>
+      <link>http://localhost:1313/posts/modulaci%C3%B3n/</link>
+      <pubDate>Sun, 04 May 2025 09:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/modulaci%C3%B3n/</guid>
+      <description>&lt;h1 id=&#34;modulación-en-radioafición-conceptos-básicos&#34;&gt;Modulación en Radioafición: Conceptos Básicos&lt;/h1&gt;&#xA;&lt;p&gt;La modulación es un proceso fundamental en la transmisión de radio. Básicamente, consiste en &lt;strong&gt;modificar una señal portadora&lt;/strong&gt; (una onda de radio de frecuencia fija) para &lt;strong&gt;incorporarle la información&lt;/strong&gt; que queremos transmitir (como voz, datos, etc.). Una señal portadora por sí sola, sin modular, no transporta ninguna información útil.&lt;/p&gt;&#xA;&lt;p&gt;Existen diferentes maneras de alterar esa portadora para codificar la información. Las principales son:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Modulación de Amplitud (AM):&lt;/strong&gt; En este tipo, se varía la &lt;strong&gt;amplitud&lt;/strong&gt; (la &amp;ldquo;altura&amp;rdquo; o intensidad) de la onda portadora al ritmo de la señal de información, mientras que su frecuencia permanece constante.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Modulación de Frecuencia (FM):&lt;/strong&gt; Aquí, lo que se varía es la &lt;strong&gt;frecuencia&lt;/strong&gt; de la portadora siguiendo la señal de información, manteniendo constante su amplitud.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Modulación de Fase (PM):&lt;/strong&gt; En este caso, se modifica la &lt;strong&gt;fase&lt;/strong&gt; (la posición relativa en el ciclo de la onda) de la portadora para codificar la información.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;bandas-laterales&#34;&gt;Bandas Laterales&lt;/h2&gt;&#xA;&lt;p&gt;Cuando se modula una señal portadora, especialmente en AM y FM, no solo se transmite la frecuencia original de la portadora, sino que aparecen nuevas frecuencias a su alrededor, llamadas &lt;strong&gt;bandas laterales&lt;/strong&gt;. Estas bandas laterales son las que realmente contienen la información.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
